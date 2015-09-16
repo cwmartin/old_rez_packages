@@ -13,5 +13,6 @@ requires = [
 requires = [
     "cython",
     "numpy",
-    "requests"
+    "requests",
+    "PyYAML"
 ]
