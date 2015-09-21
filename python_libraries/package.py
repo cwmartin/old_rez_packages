@@ -14,5 +14,6 @@ requires = [
     "cython",
     "numpy",
     "requests",
-    "PyYAML"
+    "PyYAML",
+    "pymemcache"
 ]
