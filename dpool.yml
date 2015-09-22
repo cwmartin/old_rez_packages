@@ -1,5 +1,6 @@
-# packages:
-#   maya: '2014'
+packages:
+  python_libraries: ''
+  realm: ''
 #   katana: '1.6v3'
 #   prman: '19.0'
 #   mtoa: '1.1'
