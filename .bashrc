@@ -27,8 +27,20 @@ if [ -f /opt/rez/completion/complete.sh ]; then
     . /opt/rez/completion/complete.sh
 fi
 
-alias sublime='sublime_text &'
-alias git-meld='meld "$2" "$5"'
+init_realm_rez()
+{
+    _REALM_PATH=`rez-python < <(printf "
+import rez.packages_
+package = rez.packages_.get_latest_package('realm')
+if package:
+    print package.resource.path")`
+
+    if [ -f "${_REALM_PATH}/etc/realmrc" ]; then
+        . ${_REALM_PATH}/etc/realmrc
+    fi
+}
+
+init_realm_rez
 
 # if [ -f $REALM_ROOT_DIR/realm.aliases ]; then
 # 	. $REALM_ROOT_DIR/realm.aliases
@@ -39,20 +51,11 @@ alias git-meld='meld "$2" "$5"'
 #. houdini_setup_bash
 #popd
 
+alias sublime='sublime_text &'
+alias git-meld='meld "$2" "$5"'
 
 alias fxvpn='sudo openvpn --config /etc/openvpn/fxphd.conf'
 alias vi='vim'
-#alias rv='realmrun -c rv rv "$@"'
 
-if [ -f /home/christopher/dev/gitlab/rez_packages/rez_base_env.sh ]; then
-    . /home/christopher/dev/gitlab/rez_packages/rez_base_env.sh
-fi
-
-# if [ -z $REZ_USED ]; then
-#     . /home/christopher/dev/gitlab/rez_packages/rez_base_env.sh
-#     echo "########################################"
-#     echo "# Base REZ shell initialized."
-#     echo "########################################"
-# fi
 
 
