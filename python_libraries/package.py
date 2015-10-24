@@ -15,5 +15,8 @@ requires = [
     "numpy",
     "requests",
     "PyYAML",
-    "pymemcache"
+    "pymemcache",
+    "redis",
+    'shotgun_api3',
+    'ShotgunORM'
 ]
