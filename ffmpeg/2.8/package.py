@@ -22,6 +22,7 @@ variants = [
 uuid = "repository.ffmpeg"
 
 def commands():
+    env.PATH.append('{root}/bin')
     if building:
         env.FFMPEG_INCLUDE_DIR = "{root}/include"
 

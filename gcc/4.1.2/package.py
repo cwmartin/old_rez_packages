@@ -15,6 +15,8 @@ variants = [
     ["platform-linux", "arch-x86_64", "os-Fedora-22"]
 ]
 
+build_requires = ['gcc-4.8.2']
+
 tools = [
     "gcc",
     "g++",
