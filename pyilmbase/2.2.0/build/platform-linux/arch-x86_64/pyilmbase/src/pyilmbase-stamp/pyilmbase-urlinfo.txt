@@ -1,0 +1,3 @@
+repository='external project URL'
+module='/home/christopher/dev/github/rez_packages/thirdparty/pyilmbase/pyilmbase-2.2.0.tar.gz'
+tag=''

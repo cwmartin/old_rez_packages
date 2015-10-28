@@ -12,16 +12,18 @@ description = \
     """
 
 build_requires = [
-    "boost",
+    "boost-1.55.0",
     "gcc-4.8.2",
-    "ilmbase",
-    "openexr",
+    "ilmbase-2.2.0",
+    "pyilmbase-2.2.0",
+    "openexr-2.2.0",
+    "hdf5-1.8.9",
     "python-2.7"
 
 ]
 
 variants = [
-    ["platform-linux", "arch-x86_64", "os-Fedora-22", "python-2.7"]
+    ["platform-linux", "arch-x86_64", "os-Fedora-22"]
 ]
 
 tools = [
@@ -40,6 +42,6 @@ def commands():
     env.LD_LIBRARY_PATH.append("{root}/lib")
 
     if building:
-        env.OIIO_INCLUDE_DIR = "{root}/include"
+        env.ALEMBIC_INCLUDE_DIR = "{root}/include"
         # static libs only, hence build-time only
         env.LD_LIBRARY_PATH.append("{root}/lib")

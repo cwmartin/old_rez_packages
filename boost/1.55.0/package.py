@@ -23,6 +23,7 @@ uuid = "repository.boost"
 
 def commands():
     if building:
+        env.BOOST_ROOT = '{root}'
         env.BOOST_INCLUDE_DIR = "{root}/include"
 
         # static libs
