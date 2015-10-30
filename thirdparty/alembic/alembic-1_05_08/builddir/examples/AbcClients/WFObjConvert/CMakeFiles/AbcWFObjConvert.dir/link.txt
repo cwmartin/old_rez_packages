@@ -1,0 +1,2 @@
+/usr/bin/ar cq libAbcWFObjConvert.a  CMakeFiles/AbcWFObjConvert.dir/AbcReader.cpp.o CMakeFiles/AbcWFObjConvert.dir/ParseReader.cpp.o CMakeFiles/AbcWFObjConvert.dir/Parser.cpp.o CMakeFiles/AbcWFObjConvert.dir/Reader.cpp.o
+/usr/bin/ranlib libAbcWFObjConvert.a

@@ -1,0 +1,1 @@
+/home/christopher/packages/gcc/4.8.2/platform-linux/arch-x86_64/os-Fedora-22/bin/g++     -O3 -DNDEBUG    CMakeFiles/cmTC_44cb0.dir/zlib_trycompile.cpp.o  -o cmTC_44cb0 -rdynamic /home/christopher/dev/thirdparty/temp/lib/libz.a 

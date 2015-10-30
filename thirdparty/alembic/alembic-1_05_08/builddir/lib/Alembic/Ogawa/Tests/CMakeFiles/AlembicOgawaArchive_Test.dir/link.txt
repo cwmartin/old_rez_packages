@@ -1,0 +1,1 @@
+/home/christopher/packages/gcc/4.8.2/platform-linux/arch-x86_64/os-Fedora-22/bin/g++   -O3 -DNDEBUG   CMakeFiles/AlembicOgawaArchive_Test.dir/ArchiveTest.cpp.o  -o AlembicOgawaArchive_Test -rdynamic ../../Util/libAlembicUtil.a ../libAlembicOgawa.a /home/christopher/packages/ilmbase/2.2.0/platform-linux/arch-x86_64/lib/libHalf.a 

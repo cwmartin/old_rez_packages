@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../lib/Bootstrap/CMakeHelloWorldUtil/HelloUtil.h
+iostream
+-
+stdio.h
+-
+stdlib.h
+-
+string.h
+-
+assert.h
+-
+
+/home/christopher/dev/github/rez_packages/thirdparty/alembic/alembic-1_05_08/lib/Bootstrap/CMakeHelloWorldUtil/Tests/main.cpp
+CMakeHelloWorldUtil/HelloUtil.h
+-
+sstream
+-
+iostream
+-
+

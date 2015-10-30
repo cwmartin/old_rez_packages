@@ -1,0 +1,2 @@
+/usr/bin/ar cq libAlembicAbcMaterial.a  CMakeFiles/AlembicAbcMaterial.dir/OMaterial.cpp.o CMakeFiles/AlembicAbcMaterial.dir/IMaterial.cpp.o CMakeFiles/AlembicAbcMaterial.dir/MaterialFlatten.cpp.o CMakeFiles/AlembicAbcMaterial.dir/MaterialAssignment.cpp.o CMakeFiles/AlembicAbcMaterial.dir/InternalUtil.cpp.o
+/usr/bin/ranlib libAlembicAbcMaterial.a

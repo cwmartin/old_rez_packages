@@ -1,0 +1,2 @@
+/usr/bin/ar cq libTrivialBoostUsageUtil.a  CMakeFiles/TrivialBoostUsageUtil.dir/TbuUtil.cpp.o
+/usr/bin/ranlib libTrivialBoostUsageUtil.a
