@@ -22,8 +22,12 @@ build_requires = [
 
 ]
 
+requires = [
+    "pyilmbase-2"
+]
+
 variants = [
-    ["platform-linux", "arch-x86_64", "os-Fedora-22"]
+    ["platform-linux", "arch-x86_64", "os-Fedora-22", "python-2.7"]
 ]
 
 tools = [
@@ -38,10 +42,10 @@ tools = [
 uuid = "repository.oiio"
 
 def commands():
-    env.PATH.append("{root}/bin")
-    env.LD_LIBRARY_PATH.append("{root}/lib")
+    env.PATH.append("{root}/alembic-{version}/bin")
+    env.PYTHONPATH.append('{root}/alembic-{version}/lib')
 
     if building:
-        env.ALEMBIC_INCLUDE_DIR = "{root}/include"
+        env.ALEMBIC_INCLUDE_DIR = "{root}/alembic-{version}/include"
         # static libs only, hence build-time only
-        env.LD_LIBRARY_PATH.append("{root}/lib")
+        env.LD_LIBRARY_PATH.append("{root}/alembic-{version}/static")

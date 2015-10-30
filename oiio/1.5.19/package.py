@@ -12,15 +12,15 @@ description = \
     """
 
 build_requires = [
-    "boost",
+    "boost-1.55",
     "gcc-4.8.2",
-    "openjpeg",
-    "libjpeg",
-    "libtiff",
-    "libpng",
-    "ilmbase",
-    "openexr",
-    "python-2.7"
+    "ilmbase-2.2.0",
+    "openexr-2.2.0",
+    "ffmpeg-2.8",
+    "ocio-1.0.9",
+    "python-2.7",
+    "qt-4"
+
 
 ]
 

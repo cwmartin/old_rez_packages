@@ -23,15 +23,15 @@ requires = [
 ]
 
 variants = [
-    ["platform-linux", "arch-x86_64"]
+    ["platform-linux", "arch-x86_64", "python-2.7"]
 ]
 
 uuid = "repository.pyilmbase-2.2.0"
 
 def commands():
     env.PYTHONPATH.append('{root}/lib64/python2.7/site-packages')
+    env.LD_LIBRARY_PATH.append("{root}/lib")
 
     if building:
         env.PYILMBASE_HOME = '{root}'
-        # static libs only, hence build-time only
-        env.LD_LIBRARY_PATH.append("{root}/lib")
+        env.PYILMBASE_INCLUDE_DIR = '{root}/include'

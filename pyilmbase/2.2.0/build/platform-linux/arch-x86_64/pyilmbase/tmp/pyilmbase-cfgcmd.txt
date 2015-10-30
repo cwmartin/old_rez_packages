@@ -1,1 +1,0 @@
-cmd='./configure;--prefix=/home/christopher/packages/pyilmbase/2.2.0/platform-linux/arch-x86_64;--with-pic;--disable-debug;-enable-static=yes;--enable-shared=no;--with-ilmbase-prefix=/home/christopher/packages/ilmbase/2.2.0/platform-linux/arch-x86_64'

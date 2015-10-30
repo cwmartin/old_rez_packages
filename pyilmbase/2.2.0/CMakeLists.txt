@@ -25,7 +25,7 @@ ExternalProject_add(
     URL ${url_pyilmbase}
     PREFIX pyilmbase
     UPDATE_COMMAND ""
-    CONFIGURE_COMMAND ./configure --prefix=${CMAKE_INSTALL_PREFIX} --with-pic --disable-debug -enable-static=yes --enable-shared=no --with-ilmbase-prefix=$ENV{REZ_ILMBASE_ROOT}
+    CONFIGURE_COMMAND ./configure --prefix=${CMAKE_INSTALL_PREFIX} --with-pic --disable-debug --enable-static=yes --with-ilmbase-prefix=$ENV{REZ_ILMBASE_ROOT} --with-boost-include-dir=$ENV{BOOST_INCLUDE_DIR} --with-boost-lib-dir=$ENV{BOOST_ROOT}/lib
     INSTALL_COMMAND "${install_cmd}"
     BUILD_IN_SOURCE 1
     BUILD_COMMAND make ${make_args}
