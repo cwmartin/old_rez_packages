@@ -1,2 +1,0 @@
-/usr/bin/ar cq libAlembicUtil.a  CMakeFiles/AlembicUtil.dir/Murmur3.cpp.o CMakeFiles/AlembicUtil.dir/Naming.cpp.o CMakeFiles/AlembicUtil.dir/SpookyV2.cpp.o CMakeFiles/AlembicUtil.dir/TokenMap.cpp.o
-/usr/bin/ranlib libAlembicUtil.a

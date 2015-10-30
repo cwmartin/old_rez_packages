@@ -1,2 +1,0 @@
-/usr/bin/ar cq libCMakeHelloWorldUtil.a  CMakeFiles/CMakeHelloWorldUtil.dir/HelloUtil.cpp.o
-/usr/bin/ranlib libCMakeHelloWorldUtil.a

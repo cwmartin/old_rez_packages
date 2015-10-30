@@ -1,2 +1,0 @@
-/usr/bin/ar cq libAlembicAbcCoreFactory.a  CMakeFiles/AlembicAbcCoreFactory.dir/IFactory.cpp.o
-/usr/bin/ranlib libAlembicAbcCoreFactory.a

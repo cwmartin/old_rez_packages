@@ -1,2 +1,0 @@
-/usr/bin/ar cq libAlembicAbcCollection.a  CMakeFiles/AlembicAbcCollection.dir/OCollections.cpp.o CMakeFiles/AlembicAbcCollection.dir/ICollections.cpp.o
-/usr/bin/ranlib libAlembicAbcCollection.a
